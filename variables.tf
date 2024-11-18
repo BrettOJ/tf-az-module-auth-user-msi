@@ -6,11 +6,9 @@ variable "naming_convention_info" {
   description = "(Required) Specify the naming convention information to the resource."
   type = object({
     name         = string
-    agency_code  = string
-    project_code = string
+    site         = string
     env          = string
-    zone         = string
-    tier         = string
+    app          = string
   })
 }
 
